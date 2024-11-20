@@ -23,9 +23,6 @@ services:
     build:
       context: ./mysql
     container_name: mysql_container
-    environment:
-      - MYSQL_ROOT_PASSWORD=foxik
-      - MYSQL_DATABASE=docker_eval_db
     volumes:
       - db_volume:/var/lib/mysql
     networks:
